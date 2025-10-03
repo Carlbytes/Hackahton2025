@@ -97,3 +97,22 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+Assets/Earth-Bump-Map-40K.tif
+Assets/Earth-Bump-Map-40K.tif.meta
+Assets/Earth-Color-Map-40k.tif
+Assets/Earth-Color-Map-40k.tif.meta
+Assets/earth/EarthTextures and prefab/Earth-Bump-Map-32k.png.meta
+Assets/earth/EarthTextures and prefab/Earth-Bump-Map-32k.png
+Assets/earth/EarthTextures and prefab/Earth-Color-Map-32k.png.meta
+Assets/earth/EarthTextures and prefab/Earth-Color-Map-32k.png
+Assets/earth/Textures/Earth 24K/Earth-Bump-Map-24k.png
+Assets/earth/Textures/Earth 24K/Earth-Bump-Map-24k.png.meta
+Assets/earth/Textures/Earth 24K.meta
+Assets/earth/Textures/40kEarthTex/Earth-Color-Map-40k 1.png.meta
+Assets/earth/Textures/40kEarthTex.meta
+Assets/earth/Textures/32kEarthTex.meta
+Assets/earth/Textures/Earth 24K/Earth-Color-Map-24k.png
+Assets/earth/Textures/40kEarthTex/Earth-Color-Map-40k 1.png
+Assets/earth/Textures/Earth 24K/Earth-Color-Map-24k.png.meta
+Assets/earth/EarthTextures and prefab.meta
+Assets/earth/EarthTextures and prefab/earthsettoAsset.fbx
