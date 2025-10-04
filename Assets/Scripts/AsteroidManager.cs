@@ -98,10 +98,12 @@ public class OrbitalData
 public class AsteroidManager : MonoBehaviour
 {
     // --- Inspector Fields ---
-    [SerializeField] private string apiKey = "YOUR_API_KEY_HERE";
+    [SerializeField] private string apiKey = "Bp0CgXhTRN0qpt4qpgaAggzMdBBEc2lVJWgbkDTv";
     [SerializeField] private GameObject asteroidPrefab;
     [SerializeField] private Transform earthTransform;
     [SerializeField] private Transform asteroidParent;
+
+
 
     // --- Private Fields ---
     private const string ApiFeedUrl = "https://api.nasa.gov/neo/rest/v1/feed";
@@ -168,6 +170,13 @@ public class AsteroidManager : MonoBehaviour
         }
     }
 
+    [Header("UI Board Settings")]
+    [Tooltip("The parent object where UI buttons will be created.")]
+    [SerializeField] private Transform uiButtonParent;
+
+    [Tooltip("The button prefab for the UI board.")]
+    [SerializeField] private GameObject asteroidButtonPrefab;
+
     private void CreateVRAsteroid(NearEarthObject neo)
     {
         if (asteroidPrefab == null || earthTransform == null) return;
@@ -192,6 +201,19 @@ public class AsteroidManager : MonoBehaviour
         Vector3 randomDirection = Random.onUnitSphere;
         Vector3 position = earthTransform.position + (randomDirection * missKm * sceneDistanceMultiplier);
         asteroidInstance.transform.position = position;
+
+        if (uiButtonParent != null && asteroidButtonPrefab != null)
+        {
+            GameObject buttonInstance = Instantiate(asteroidButtonPrefab, uiButtonParent);
+
+            // Get the button's controller script and pass it the data and location
+            AsteroidButtonController buttonController = buttonInstance.GetComponent<AsteroidButtonController>();
+            if (buttonController != null)
+            {
+                buttonController.Initialize(neo, asteroidInstance.transform);
+            }
+        }
+
     }
 
     // --- UPDATED METHOD THAT AVOIDS 'dynamic' ---
