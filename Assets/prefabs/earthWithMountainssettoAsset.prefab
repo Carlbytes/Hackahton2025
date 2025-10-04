@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5004176568085952272
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195409281197133826, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 719990004518062776, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      propertyPath: m_Name
+      value: earthWithMountainssettoAsset
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7386820858405958764, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3803536477983131077}
+    - targetCorrespondingSourceObject: {fileID: 6293316150670328265, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3096664416325488628}
+    - targetCorrespondingSourceObject: {fileID: 4132767812608781854, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5230176805207794733}
+    - targetCorrespondingSourceObject: {fileID: 7177954107074979087, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055323782814352796}
+    - targetCorrespondingSourceObject: {fileID: 3414830361191108922, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2839557777154207372}
+    - targetCorrespondingSourceObject: {fileID: 6302243633982798150, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4692583234880895244}
+    - targetCorrespondingSourceObject: {fileID: 6518995594505602772, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026402879109802671}
+    - targetCorrespondingSourceObject: {fileID: 8938071164761320381, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2248081589063651256}
+    - targetCorrespondingSourceObject: {fileID: 2419699415769848583, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4292920674408836884}
+    - targetCorrespondingSourceObject: {fileID: 4536278528308498681, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5654345402217386647}
+    - targetCorrespondingSourceObject: {fileID: 9165705648786485260, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6311574153446312873}
+  m_SourcePrefab: {fileID: 100100000, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+--- !u!1 &1298295781901094486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6302243633982798150, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4692583234880895244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298295781901094486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &1307224360980297433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6293316150670328265, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3096664416325488628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307224360980297433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &2236732000856666564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6518995594505602772, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026402879109802671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236732000856666564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &2589897974031254396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7386820858405958764, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3803536477983131077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2589897974031254396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &2805565724995228191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7177954107074979087, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2055323782814352796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805565724995228191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &4141060188597263533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8938071164761320381, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2248081589063651256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4141060188597263533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &4197716226722301724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9165705648786485260, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6311574153446312873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4197716226722301724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &7270524895555365911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419699415769848583, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4292920674408836884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270524895555365911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &7643033038076208682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3414830361191108922, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2839557777154207372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643033038076208682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &8900926348195260393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4536278528308498681, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5654345402217386647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8900926348195260393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
+--- !u!1 &8946649693512685838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4132767812608781854, guid: e9b133890caabfe4695a4f50786f6135, type: 3}
+  m_PrefabInstance: {fileID: 5004176568085952272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5230176805207794733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946649693512685838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e186a5ee9fe064990ca2d3de70afb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeteorHitMountains
+  target: {fileID: 0}
+  hitRange: 25
+  damageReduce: 0
+  meteor: {fileID: 0}
