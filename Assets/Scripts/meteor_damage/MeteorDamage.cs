@@ -1,9 +1,10 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class MeteorDamage : MonoBehaviour
 {
     public double pop; //population will equal gameobjects population
-    public MeteorStats metStats;
+    public GameObject meteor;
 
     private void Start()
     {
@@ -14,15 +15,26 @@ public class MeteorDamage : MonoBehaviour
             Debug.Log("Value: " + pop);
         }
     }
-    void takeDamage()
+
+    private void Update()
     {
-        pop -= (pop/100)*metStats.meteorDamage; //takes away a percentage of the population
+        meteor = GameObject.FindGameObjectWithTag("Meteor");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void takeDamage()
     {
-        if(collision.gameObject.tag == "Meteor")
+        float metStats = meteor.GetComponent<MeteorStats>().meteorDamage;
+        if(metStats == null) { Debug.Log("WARNIGN YOU FUCKED UP DIPSHIT "); }
+        Debug.Log("pop: " + pop);
+        pop -= (pop/metStats)*100; //takes away a percentage of the population OH THIS MATHS NEED TO BE FIXED WOW
+        Debug.Log("new pop: "+pop);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Meteor")
         {
+            Debug.Log("Collided");
             takeDamage();
             //show clipboard
         }
