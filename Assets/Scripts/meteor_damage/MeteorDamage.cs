@@ -26,7 +26,7 @@ public class MeteorDamage : MonoBehaviour
         float metStats = meteor.GetComponent<MeteorStats>().meteorDamage;
         if(metStats == null) { Debug.Log("WARNIGN YOU FUCKED UP DIPSHIT "); }
         Debug.Log("pop: " + pop);
-        pop -= (pop/metStats)*100; //takes away a percentage of the population OH THIS MATHS NEED TO BE FIXED WOW
+        pop -= (pop/metStats)*100; //takes away a percentage of the population (metStats/pop)*100
         Debug.Log("new pop: "+pop);
     }
 
