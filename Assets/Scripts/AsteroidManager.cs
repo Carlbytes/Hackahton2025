@@ -183,14 +183,34 @@ public class AsteroidManager : MonoBehaviour
             asteroidInstance.transform.parent = asteroidParent;
         }
 
-        float avgDiameter = (float)(neo.estimated_diameter.kilometers.estimated_diameter_min + neo.estimated_diameter.kilometers.estimated_diameter_max) / 2.0f;
-        float visualScaleMultiplier = 0.1f;
-        asteroidInstance.transform.localScale = Vector3.one * avgDiameter * visualScaleMultiplier;
+        // --- 1. OBJECT SCALING ---
+        // Get the real-world average diameter in kilometers.
+        float avgDiameterKm = (float)(neo.estimated_diameter.kilometers.estimated_diameter_min + neo.estimated_diameter.kilometers.estimated_diameter_max) / 2.0f;
 
+        // ** Tweak this value **: A multiplier to control the final visual size.
+        float visualScaleMultiplier = 0.5f;
+
+        // Apply a non-linear scale (logarithmic) to make small asteroids visible.
+        // The "+1" prevents log(1) from being 0, ensuring a base size.
+        float scaledDiameter = Mathf.Log(avgDiameterKm + 1) * visualScaleMultiplier;
+        asteroidInstance.transform.localScale = Vector3.one * scaledDiameter;
+
+
+        // --- 2. DISTANCE SCALING & POSITIONING ---
+        // Get the real-world miss distance in kilometers.
         float missKm = float.Parse(neo.close_approach_data[0].miss_distance.kilometers);
-        float sceneDistanceMultiplier = 0.00001f;
+
+        // ** Tweak this value **: A multiplier to bring the vast distances into your scene.
+        float distanceScaleMultiplier = 0.1f;
+
+        // Apply a non-linear scale (square root) to compress the vast distances.
+        float scaledMissDistance = Mathf.Sqrt(missKm) * distanceScaleMultiplier;
+
+        // Determine a random direction for the asteroid's approach.
         Vector3 randomDirection = Random.onUnitSphere;
-        Vector3 position = earthTransform.position + (randomDirection * missKm * sceneDistanceMultiplier);
+
+        // Set the final position relative to Earth.
+        Vector3 position = earthTransform.position + (randomDirection * scaledMissDistance);
         asteroidInstance.transform.position = position;
     }
 
