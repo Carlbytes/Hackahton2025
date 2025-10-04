@@ -4,20 +4,15 @@ public class ClosestBoxColliderFinder : MonoBehaviour
 {
     public enum SearchMode { ScanScene, OverlapSphere }
 
-    [Header("Search Settings")]
     public SearchMode searchMode = SearchMode.ScanScene;
     public float maxRadius = 10f;     
     public LayerMask layerMask = ~0;
     public bool includeTriggers = true;
     public bool includeSelf = false;
 
-    [Header("Logging")]
-    [Tooltip("If true, logs only when the closest collider changes.")]
     public bool logOnChange = true;
-    [Tooltip("If false, logs every frame (noisy).")]
     public bool logEveryFrame = false;
 
-    [Header("Gizmos")]
     public bool drawGizmos = true;
 
     public struct Result
