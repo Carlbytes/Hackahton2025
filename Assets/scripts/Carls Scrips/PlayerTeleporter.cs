@@ -6,7 +6,7 @@ public class PlayerTeleporter : MonoBehaviour
     public static PlayerTeleporter Instance;
 
     [Tooltip("How far from the asteroid the player should appear.")]
-    [SerializeField] private float teleportOffset = 10f;
+    [SerializeField] private float teleportOffset = 0.1f;
 
     void Awake()
     {
