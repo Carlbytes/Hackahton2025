@@ -11,7 +11,7 @@ using System.Linq;
 public class AsteroidManager : MonoBehaviour
 {
     // --- Inspector Fields ---
-    [SerializeField] private string apiKey = "YOUR_API_KEY_HERE"; // Use your own key
+    [SerializeField] private string apiKey = "Bp0CgXhTRN0qpt4qpgaAggzMdBBEc2lVJWgbkDTv"; // Use your own key
     [SerializeField] private GameObject asteroidPrefab;
     [SerializeField] private Transform earthTransform;
     [SerializeField] private Transform asteroidParent;
