@@ -3,20 +3,19 @@ using UnityEngine;
 public class earthMover : MonoBehaviour
 {
     [Header("Orbit")]
-    public Transform center;                 // What to orbit around (e.g., the Sun)
-    public float orbitRadius = 5f;           // Distance from the center
-    public Vector3 orbitAxis = Vector3.up;   // Axis to orbit around (world-space)
-    public float orbitDegreesPerSecond = 30f;// Orbit speed in degrees/sec
+    public Transform center;                 
+    public float orbitRadius = 5f;           
+    public Vector3 orbitAxis = Vector3.up;   
+    public float orbitDegreesPerSecond = 30f;
     public bool useCurrentOffsetAsStart = true;
-    [Range(0f, 360f)] public float startAngleDegrees = 0f; // Used if not using current offset
+    [Range(0f, 360f)] public float startAngleDegrees = 0f; 
 
     [Header("Self Rotation (Spin)")]
-    public Vector3 selfAxis = Vector3.up;    // Axis to spin around
-    public float selfDegreesPerSecond = 90f; // Spin speed in degrees/sec
-    public bool spinInWorldSpace = false;    // false = Space.Self, true = Space.World
+    public Vector3 selfAxis = Vector3.up;    
+    public float selfDegreesPerSecond = 90f; 
+    public bool spinInWorldSpace = false;    
 
-    // Internal
-    private Vector3 _offset;                 // Current offset from center (in world space)
+    private Vector3 _offset;                 
 
     void Start()
     {
@@ -27,23 +26,20 @@ public class earthMover : MonoBehaviour
             return;
         }
 
-        // Normalize axes to keep motion clean
         if (orbitAxis != Vector3.zero) orbitAxis.Normalize();
         if (selfAxis != Vector3.zero) selfAxis.Normalize();
 
         if (useCurrentOffsetAsStart)
         {
             _offset = transform.position - center.position;
-            // If we started exactly at center, push out to radius along +X
             if (_offset.sqrMagnitude < 0.0001f)
                 _offset = Vector3.right * Mathf.Max(0.0001f, orbitRadius);
             else
-                orbitRadius = _offset.magnitude; // sync radius to current distance
+                orbitRadius = _offset.magnitude; 
         }
         else
         {
-            // Build a starting offset lying in a plane perpendicular to orbitAxis.
-            // We'll pick a stable perpendicular vector to orbitAxis as the 0° direction.
+           
             Vector3 basis = Vector3.Cross(orbitAxis, Vector3.up);
             if (basis.sqrMagnitude < 1e-6f) basis = Vector3.Cross(orbitAxis, Vector3.right);
             basis.Normalize();
@@ -58,20 +54,17 @@ public class earthMover : MonoBehaviour
     {
         if (center == null) return;
 
-        // 1) ORBIT: rotate the offset around the orbit axis
         float orbitStep = orbitDegreesPerSecond * Time.deltaTime;
         Quaternion orbitRotation = Quaternion.AngleAxis(orbitStep, orbitAxis);
         _offset = orbitRotation * _offset;
         transform.position = center.position + _offset;
 
-        // 2) SELF-SPIN: rotate the object around its own axis
         float spinStep = selfDegreesPerSecond * Time.deltaTime;
         transform.Rotate(selfAxis, spinStep, spinInWorldSpace ? Space.World : Space.Self);
     }
 
     void OnValidate()
     {
-        // Keep axes normalized in the inspector
         if (orbitAxis != Vector3.zero) orbitAxis = orbitAxis.normalized;
         if (selfAxis != Vector3.zero) selfAxis = selfAxis.normalized;
 

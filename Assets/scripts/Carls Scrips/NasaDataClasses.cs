@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-// This file holds all the "blueprint" classes for the NASA API data,
-// making them accessible to any script in your project.
 
 public class NasaApiResponse
 {

@@ -8,12 +8,7 @@ public class AsteroidUIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI diameterText;
     [SerializeField] private TextMeshProUGUI velocityText;
     [SerializeField] private TextMeshProUGUI hazardousText;
-    // Add references for any other text fields you have
-
-    /// <summary>
-    /// A public method to receive asteroid data and update the UI.
-    /// This will be called by the AsteroidManager.
-    /// </summary>
+   
     public void UpdateUI(NearEarthObject neo)
     {
         if (neo == null) return;

@@ -3,7 +3,7 @@
 public class ElipticalOrbi : MonoBehaviour
 {
     [Header("Centers & Axes")]
-    public Transform center;                        // What to orbit around
+    public Transform center;                        
     [Tooltip("Normal of the orbit plane (world-space).")]
     public Vector3 orbitPlaneNormal = Vector3.up;
     [Tooltip("Direction of periapsis within the orbit plane. If zero, a stable perpendicular is chosen.")]
@@ -13,10 +13,10 @@ public class ElipticalOrbi : MonoBehaviour
 
     [Header("Ellipse Shape")]
     [Tooltip("Semi-major axis length (a).")]
-    public float semiMajorAxis = 5f;               // a
+    public float semiMajorAxis = 5f;              
     [Range(0f, 0.99f)]
     [Tooltip("Eccentricity (e). 0 = circle, <1 = ellipse.")]
-    public float eccentricity = 0.3f;              // e (0..1)
+    public float eccentricity = 0.3f;              
 
     [Header("Orbit Timing")]
     [Tooltip("Complete-orbit time (seconds) for Keplerian/ConstantAngle modes.")]
@@ -38,17 +38,17 @@ public class ElipticalOrbi : MonoBehaviour
     public bool spinInWorldSpace = false;
 
     // === Internal state ===
-    private Vector3 nrm, majorDir, minorDir; // orbit plane basis
-    private float a, e, b, c;                // ellipse terms: a, e, b=a*sqrt(1-e^2), c=a*e
-    private float meanMotion;                // n = 2π/T
-    private float meanAnomaly;               // M (rad) for Keplerian mode
-    private float trueAnomaly;               // ν (rad) for ConstantAngle mode
+    private Vector3 nrm, majorDir, minorDir; 
+    private float a, e, b, c;                
+    private float meanMotion;               
+    private float meanAnomaly;              
+    private float trueAnomaly;               
 
     // Arc-length LUT for ConstantLinear mode
     private const int LUT_SAMPLES = 1024;
-    private float[] sLUT;           // cumulative arc length over [0, 2π]
-    private float totalArcLength;   // approximate perimeter
-    private float sAlong;           // current arc-length position (wraps 0..totalArcLength)
+    private float[] sLUT;           
+    private float totalArcLength;   
+    private float sAlong;           
 
     void Start()
     {
@@ -59,7 +59,6 @@ public class ElipticalOrbi : MonoBehaviour
             return;
         }
 
-        // Clamp & precompute
         a = Mathf.Max(0.0001f, semiMajorAxis);
         e = Mathf.Clamp(eccentricity, 0f, 0.99f);
         b = a * Mathf.Sqrt(1f - e * e);
@@ -67,7 +66,6 @@ public class ElipticalOrbi : MonoBehaviour
 
         nrm = orbitPlaneNormal.sqrMagnitude < 1e-8f ? Vector3.up : orbitPlaneNormal.normalized;
 
-        // Build a stable in-plane basis (majorDir at periapsis, minorDir 90° ahead)
         Vector3 basis = periapsisDirection;
         if (basis.sqrMagnitude < 1e-8f)
         {
@@ -83,21 +81,17 @@ public class ElipticalOrbi : MonoBehaviour
 
         if (speedMode == SpeedMode.Keplerian)
         {
-            // Convert ν0 -> E0 -> M0
             float E0 = TrueToEccentric(trueAnomaly, e);
             meanAnomaly = NormalizeAngle(E0 - e * Mathf.Sin(E0));
         }
 
-        // Build arc-length table for ConstantLinear mode
         BuildArcLengthLUT();
         if (speedMode == SpeedMode.ConstantLinear)
         {
-            // Initialize sAlong from starting true anomaly
             float nu0 = Mathf.Deg2Rad * startTrueAnomalyDeg;
             sAlong = ArcLengthFromNu(nu0);
         }
 
-        // Place initial position
         ApplyInitialPosition();
     }
 

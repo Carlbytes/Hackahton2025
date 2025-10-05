@@ -5,13 +5,11 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Linq;
 
-// The data classes have been removed from this file.
-// They should be in your 'NasaDataClasses.cs' script.
 
 public class AsteroidManager : MonoBehaviour
 {
     // --- Inspector Fields ---
-    [SerializeField] private string apiKey = "Bp0CgXhTRN0qpt4qpgaAggzMdBBEc2lVJWgbkDTv"; // Use your own key
+    [SerializeField] private string apiKey = "Bp0CgXhTRN0qpt4qpgaAggzMdBBEc2lVJWgbkDTv"; 
     [SerializeField] private GameObject asteroidPrefab;
     [SerializeField] private Transform earthTransform;
     [SerializeField] private Transform asteroidParent;
@@ -92,7 +90,7 @@ public class AsteroidManager : MonoBehaviour
         asteroidInstance.name = neo.name;
 
         AsteroidData dataComponent = asteroidInstance.AddComponent<AsteroidData>();
-        asteroidInstance.AddComponent<AsteroidImpact>(); // Add the impact script
+        asteroidInstance.AddComponent<AsteroidImpact>(); 
         dataComponent.neoData = neo;
 
         if (asteroidParent != null)

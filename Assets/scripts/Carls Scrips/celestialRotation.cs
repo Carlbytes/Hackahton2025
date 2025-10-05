@@ -4,10 +4,10 @@ public class celestialRotation : MonoBehaviour
 {
 
     [Header("Self Rotation (Spin)")]
-    public Vector3 selfAxis = Vector3.up;    // Axis to spin around
-    public float selfDegreesPerSecond = 90f; // Spin speed in degrees/sec
-    public bool spinInWorldSpace = false;    // false = Space.Self, true = Space.World
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Vector3 selfAxis = Vector3.up;    
+    public float selfDegreesPerSecond = 90f; 
+    public bool spinInWorldSpace = false;    
+    
     void Start()
     {
         if (selfAxis != Vector3.zero) selfAxis.Normalize();
