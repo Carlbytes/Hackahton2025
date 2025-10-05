@@ -2,28 +2,20 @@ using UnityEngine;
 
 public class VaporizerShoot : MonoBehaviour
 {
-    public GameObject projPrefab;        
+    public GameObject projPrefab;
 
-    [Header("Shooting Settings")]
     public float projSpeed = 100f;
-    public float shootDelay = 2f;         
-    public float maxTargetRange = 1000f; 
+    public float shootDelay = 2f;
+    public float maxTargetRange = 10000f;
 
     private bool readyToShoot = true;
 
-    private void Update()
+    public void FireButtonPressed()
     {
-        //MyInput();
-    }
-
-    public void MyInput()
-    {
-        //bool shootButtonPressed = Input.GetKeyDown(KeyCode.Space); //placeholder
-
-        //if (shootButtonPressed)
-        //{
+        if (readyToShoot)
             ShootAtNearestMeteor();
-        //}
+        else
+            Debug.Log("not ready to shoot");
     }
 
     private void ShootAtNearestMeteor()
@@ -31,24 +23,28 @@ public class VaporizerShoot : MonoBehaviour
         GameObject nearestMeteor = FindNearestMeteor();
         if (nearestMeteor == null)
         {
-            //Debug.Log("No meteors in range");
+            Debug.Log("no meteors nearby");
             return;
         }
 
-        // Compute direction to meteor
-        Vector3 direction = (nearestMeteor.transform.position - gameObject.transform.position).normalized;
+        Vector3 direction = (nearestMeteor.transform.position - transform.position).normalized;
 
-        // Spawn projectile
-        GameObject proj = Instantiate(projPrefab, gameObject.transform.position, Quaternion.LookRotation(direction));
+        GameObject proj = Instantiate(projPrefab, transform.position, Quaternion.LookRotation(direction));
 
-        // Apply velocity
+        VapoizeProj projectileScript = proj.GetComponent<VapoizeProj>();
+        if (projectileScript != null)
+        {
+            projectileScript.FireProjectile(gameObject, nearestMeteor, 0);
+        }
+
+        // Give it an initial push (optional if using homing)
         Rigidbody rb = proj.GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.linearVelocity = direction * projSpeed;
         }
 
-        Debug.Log("fired at " + nearestMeteor.name);
+        Debug.Log($"fired at {nearestMeteor.name}");
 
         readyToShoot = false;
         Invoke(nameof(ResetShot), shootDelay);
@@ -74,7 +70,6 @@ public class VaporizerShoot : MonoBehaviour
                 minDistanceSqr = distSqr;
             }
         }
-
         return nearest;
     }
 

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4393cc63e1c204641b1f323e657b710e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VaporizerShoot
-  projPrefab: {fileID: 4827038593906274638, guid: 79e0154f4f7d0de49a29f12591a47e84, type: 3}
-  projSpeed: 25
+  projPrefab: {fileID: 3963729816597669164, guid: e8b56a8fe6701ef41bab04d700fac5d8, type: 3}
+  projSpeed: 300
   shootDelay: 2
   maxTargetRange: 1000
