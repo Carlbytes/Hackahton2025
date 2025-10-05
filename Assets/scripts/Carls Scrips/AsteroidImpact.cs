@@ -94,8 +94,25 @@ public class AsteroidImpact : MonoBehaviour
         }
 
         report.AppendLine("--------------------");
-        Debug.Log(report.ToString());
+        // The corrected version
 
+        ImpactReportUI reportUI = ImpactReportUI.Instance;
+
+        if (reportUI == null)
+        {
+            reportUI = FindObjectOfType<ImpactReportUI>(true); // 'true' allows finding inactive objects
+        }
+
+        // 3. Now, use the UI if we found it, otherwise fall back to the console.
+        if (reportUI != null)
+        {
+            reportUI.DisplayReport(report.ToString());
+        }
+        else
+        {
+            Debug.LogWarning("Could not find ImpactReportUI in the scene. Falling back to console log.");
+            Debug.Log(report.ToString());
+        }
         if (shockwavePrefab != null)
         {
             Instantiate(shockwavePrefab, impactPoint, Quaternion.identity);

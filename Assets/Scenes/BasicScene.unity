@@ -119,20 +119,109 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &50126157
+--- !u!1 &67199795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67199796}
+  - component: {fileID: 67199799}
+  - component: {fileID: 67199798}
+  - component: {fileID: 67199797}
+  - component: {fileID: 67199800}
+  m_Layer: 5
+  m_Name: ImpactReportPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &67199796
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67199795}
+  m_LocalRotation: {x: -0, y: 0.73020303, z: -0, w: 0.6832303}
+  m_LocalPosition: {x: 0, y: 0, z: -1539}
+  m_LocalScale: {x: 0.5, y: 0.75, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 526609556}
+  m_Father: {fileID: 1564932186}
+  m_LocalEulerAnglesHint: {x: 0, y: 93.807, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 352, y: 70}
+  m_SizeDelta: {x: 981, y: 505}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &67199797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064624}
+  m_GameObject: {fileID: 67199795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dc0539dc38123444a45222eb281805d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Europe North
-  populationInMillions: 109.5
+  m_EditorClassIdentifier: '::'
+  reportText: {fileID: 526609557}
+--- !u!114 &67199798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67199795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9529412, g: 0.47058824, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &67199799
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67199795}
+  m_CullTransparentMesh: 1
+--- !u!225 &67199800
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67199795}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &171573994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1494808749367740338, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
@@ -198,20 +287,6 @@ MonoBehaviour:
     m_Reference: {fileID: 0}
   xrRigTransform: {fileID: 636035029}
   targetPosition: {x: 0, y: 0, z: -15}
---- !u!114 &210569716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Saudai & Nearby
-  populationInMillions: 392.3
 --- !u!1 &276728673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 206638697925215224, guid: 670cda0231e800744b9b91b8728ff41d, type: 3}
@@ -230,39 +305,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RegionManager
   allRegions:
-  - {fileID: 8838717131339064634}
-  - {fileID: 8838717131339064633}
-  - {fileID: 8838717131339064632}
-  - {fileID: 8838717131339064631}
-  - {fileID: 8838717131339064630}
-  - {fileID: 50126157}
-  - {fileID: 1062907285}
-  - {fileID: 2000452356}
-  - {fileID: 1966670927}
-  - {fileID: 210569716}
-  - {fileID: 1850229904}
-  - {fileID: 523478682}
-  - {fileID: 1828887019}
-  - {fileID: 790210522}
-  - {fileID: 1662141207}
-  - {fileID: 625668384}
-  - {fileID: 625795760}
-  - {fileID: 289128336}
-  - {fileID: 979339302}
---- !u!114 &289128336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Southern Africa
-  populationInMillions: 311.2
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &299639867
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,10 +557,6 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 942810691211101373, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 756192407}
     - target: {fileID: 950175637189515454, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -538,11 +595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.244
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.72
+      value: -13.58
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -676,10 +733,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 6678509202150728127, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 756192407}
     - target: {fileID: 6747261228452868767, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -745,48 +798,142 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 173088990}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
---- !u!114 &523478682
+--- !u!1 &526609555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526609556}
+  - component: {fileID: 526609558}
+  - component: {fileID: 526609557}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526609556
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526609555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 67199796}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &526609557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064617}
+  m_GameObject: {fileID: 526609555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: India & Surrounding
-  populationInMillions: 1746
---- !u!114 &625668384
-MonoBehaviour:
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Your impact here
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -341.0449, y: -211.47041, z: -351.45444, w: -205.24344}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &526609558
+CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Northern Africa
-  populationInMillions: 642.9
---- !u!114 &625795760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Eastern Africa
-  populationInMillions: 642.9
+  m_GameObject: {fileID: 526609555}
+  m_CullTransparentMesh: 1
 --- !u!1 &631960576
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +1101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &756192407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,48 +1131,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &790210522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Southern Asia
-  populationInMillions: 458.1
---- !u!114 &979339302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Antartica
-  populationInMillions: 0
---- !u!114 &1062907285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Europe West
-  populationInMillions: 199.8
 --- !u!1001 &1217546073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1373,31 +1478,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.77
+      value: -4.05
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8718961
+      value: 0.910106
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.489691
+      value: -0.41437554
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.79
+      value: -7.65
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.65
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1405,7 +1510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -58.641
+      value: -48.96
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1475,7 +1580,10 @@ PrefabInstance:
     - {fileID: 6755287456320618877, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
     m_RemovedGameObjects:
     - {fileID: 668342169807058147, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67199796}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2740105344738635813, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       insertIndex: -1
@@ -1484,90 +1592,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 171574001}
   m_SourcePrefab: {fileID: 100100000, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
---- !u!1 &1503776719
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1503776721}
-  - component: {fileID: 1503776720}
-  m_Layer: 0
-  m_Name: TeleportManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1503776720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503776719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f6542ab5deebb54facb26fa9f708e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ReturnToOrigin
-  xrOriginTransform: {fileID: 636035029}
-  teleportAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Teleport
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: f2cd9e5c-7917-4a89-963f-2ea6a7a311f6
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: f81b9f79-2a46-4fcf-8333-c6995df218bc
-        m_Path: <XRController>{LeftHand}/primaryButton
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Teleport
-        m_Flags: 0
-      m_Flags: 0
-    m_Reference: {fileID: 0}
---- !u!4 &1503776721
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503776719}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.04679, y: 1.27088, z: -13.62624}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1519995289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4469520210794193780, guid: 385600831e99ca748badccdd145e3cd8, type: 3}
   m_PrefabInstance: {fileID: 6190216380237906294}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1543298487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Europe East
-  populationInMillions: 140.2
 --- !u!1 &1564932178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2740105344738635813, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
@@ -1592,6 +1621,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!224 &1564932186 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+  m_PrefabInstance: {fileID: 1461873699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1593543257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,107 +1753,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1662141207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Oceanic
-  populationInMillions: 33.4
---- !u!114 &1828887019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Eastern Asia
-  populationInMillions: 1842
---- !u!114 &1850229904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Pakisan & Surrounding
-  populationInMillions: 378.4
---- !u!114 &1966670927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Russia East
-  populationInMillions: 28.7
---- !u!114 &2000452356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Russian West
-  populationInMillions: 114.8
---- !u!1 &2062427414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2062427415}
-  m_Layer: 2
-  m_Name: XR Origin Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2062427415
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062427414}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2068264564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2384,242 +2317,13 @@ PrefabInstance:
     - {fileID: 4738987423452461605, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
     m_RemovedGameObjects:
     - {fileID: 278193081332572143, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
+    - {fileID: 385080555512683179, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5092805966415227696, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1431537334}
-    - targetCorrespondingSourceObject: {fileID: 440786475736109983, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8838717131339064634}
-    - targetCorrespondingSourceObject: {fileID: 4744930937625097936, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8838717131339064633}
-    - targetCorrespondingSourceObject: {fileID: 1596218736633752455, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8838717131339064632}
-    - targetCorrespondingSourceObject: {fileID: 5037737022770019741, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8838717131339064631}
-    - targetCorrespondingSourceObject: {fileID: 1759983063006366858, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8838717131339064630}
-    - targetCorrespondingSourceObject: {fileID: 7333515998981182423, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 50126157}
-    - targetCorrespondingSourceObject: {fileID: 7060822965008254320, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1062907285}
-    - targetCorrespondingSourceObject: {fileID: 6257200590054604307, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1543298487}
-    - targetCorrespondingSourceObject: {fileID: 96586111923346052, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2000452356}
-    - targetCorrespondingSourceObject: {fileID: 4717813516909470143, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1966670927}
-    - targetCorrespondingSourceObject: {fileID: 4728864523438450457, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 210569716}
-    - targetCorrespondingSourceObject: {fileID: 7501283653432815064, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1850229904}
-    - targetCorrespondingSourceObject: {fileID: 845766016016548881, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 523478682}
-    - targetCorrespondingSourceObject: {fileID: 1559143292037789581, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1828887019}
-    - targetCorrespondingSourceObject: {fileID: 822020908880649165, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 790210522}
-    - targetCorrespondingSourceObject: {fileID: 6292610288825769804, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1662141207}
-    - targetCorrespondingSourceObject: {fileID: 5394234808322691304, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 625668384}
-    - targetCorrespondingSourceObject: {fileID: 6087706729166627245, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 625795760}
-    - targetCorrespondingSourceObject: {fileID: 7013075672809895880, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 289128336}
-    - targetCorrespondingSourceObject: {fileID: 7004715226221327741, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 979339302}
   m_SourcePrefab: {fileID: 100100000, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
---- !u!1 &8838717131339064610 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7004715226221327741, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064611 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7013075672809895880, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064612 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6087706729166627245, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064613 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5394234808322691304, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064614 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6292610288825769804, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064615 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 822020908880649165, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064616 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1559143292037789581, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064617 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 845766016016548881, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7501283653432815064, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064619 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4728864523438450457, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064620 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4717813516909470143, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 96586111923346052, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064622 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6257200590054604307, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064623 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7060822965008254320, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7333515998981182423, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759983063006366858, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064626 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5037737022770019741, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1596218736633752455, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4744930937625097936, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8838717131339064629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 440786475736109983, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
-  m_PrefabInstance: {fileID: 8838717131339064609}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8838717131339064630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: South(South) America
-  populationInMillions: 123.2
---- !u!114 &8838717131339064631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: South America North
-  populationInMillions: 294.8
---- !u!114 &8838717131339064632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: Central America
-  populationInMillions: 183.4
---- !u!114 &8838717131339064633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: United States of America
-  populationInMillions: 330.8
---- !u!114 &8838717131339064634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838717131339064629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dbc422aee76044181b42615bdf3048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
-  regionName: North America
-  populationInMillions: 42.1
 --- !u!1001 &9148716854440332906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2676,7 +2380,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: moon2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7779161963811819009, guid: 0265d4d78ccd55c42b5bfc807bd56966, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2700,5 +2405,3 @@ SceneRoots:
   - {fileID: 327401857}
   - {fileID: 1217546073}
   - {fileID: 1461873699}
-  - {fileID: 2062427415}
-  - {fileID: 1503776721}

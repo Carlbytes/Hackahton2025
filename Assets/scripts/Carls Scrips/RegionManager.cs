@@ -20,8 +20,5 @@ public class RegionManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // Automatically find and add all PopulationRegion components in the scene to the list
-        allRegions.AddRange(FindObjectsOfType<PopulationRegion>());
     }
 }
