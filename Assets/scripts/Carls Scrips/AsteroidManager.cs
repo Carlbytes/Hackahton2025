@@ -95,10 +95,6 @@ public class AsteroidManager : MonoBehaviour
         asteroidInstance.AddComponent<AsteroidImpact>(); // Add the impact script
         dataComponent.neoData = neo;
 
-        // Add a Rigidbody to make collisions work, and turn off gravity.
-        Rigidbody rb = asteroidInstance.AddComponent<Rigidbody>();
-        rb.useGravity = false;
-
         if (asteroidParent != null)
         {
             asteroidInstance.transform.parent = asteroidParent;

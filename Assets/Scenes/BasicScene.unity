@@ -496,6 +496,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 942810691211101373, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 756192407}
     - target: {fileID: 950175637189515454, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -534,11 +538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 4.244
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.58
+      value: -25.72
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -672,6 +676,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6678509202150728127, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 756192407}
     - target: {fileID: 6747261228452868767, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -946,7 +954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756192407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,31 +1373,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.05
+      value: -23.77
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.910106
+      value: 0.8718961
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.41437554
+      value: -0.489691
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.65
+      value: -5.79
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.35
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1397,7 +1405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -48.96
+      value: -58.641
       objectReference: {fileID: 0}
     - target: {fileID: 2171780756831834323, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1476,6 +1484,71 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 171574001}
   m_SourcePrefab: {fileID: 100100000, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+--- !u!1 &1503776719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1503776721}
+  - component: {fileID: 1503776720}
+  m_Layer: 0
+  m_Name: TeleportManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1503776720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503776719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f6542ab5deebb54facb26fa9f708e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReturnToOrigin
+  xrOriginTransform: {fileID: 636035029}
+  teleportAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Teleport
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: f2cd9e5c-7917-4a89-963f-2ea6a7a311f6
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: f81b9f79-2a46-4fcf-8333-c6995df218bc
+        m_Path: <XRController>{LeftHand}/primaryButton
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Teleport
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+--- !u!4 &1503776721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503776719}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04679, y: 1.27088, z: -13.62624}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1519995289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4469520210794193780, guid: 385600831e99ca748badccdd145e3cd8, type: 3}
@@ -1716,6 +1789,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PopulationRegion
   regionName: Russian West
   populationInMillions: 114.8
+--- !u!1 &2062427414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062427415}
+  m_Layer: 2
+  m_Name: XR Origin Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062427415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062427414}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -13.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2068264564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2596,3 +2700,5 @@ SceneRoots:
   - {fileID: 327401857}
   - {fileID: 1217546073}
   - {fileID: 1461873699}
+  - {fileID: 2062427415}
+  - {fileID: 1503776721}

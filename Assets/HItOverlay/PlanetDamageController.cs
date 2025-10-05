@@ -24,6 +24,7 @@ public class PlanetDamageController : MonoBehaviour
         if (planetRenderer == null || impactMarker == null)
         {
             return; // Exit the function if anything is missing.
+            
         }
 
         // Get the planet's material instance for this object.
