@@ -9,6 +9,7 @@ TagManager:
   - Earth
   - SkyboxCamera
   - Asteroid
+  - Planet
   layers:
   - Default
   - TransparentFX
