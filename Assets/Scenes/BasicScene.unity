@@ -392,6 +392,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5613341831553823114, guid: 730857486c42a2f4ab77481cdf1ae45d, type: 3}
   m_PrefabInstance: {fileID: 8838717131339064609}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &384756245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2740105344738635813, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+  m_PrefabInstance: {fileID: 646626058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &384756250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384756245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &441087506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -474,7 +498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.58
+      value: -13.461
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -662,6 +686,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1743431210}
+    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1743431217}
     - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2132214501}
@@ -925,6 +952,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 865698762744071854, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.b
+      value: 0.058823545
+      objectReference: {fileID: 0}
+    - target: {fileID: 865698762744071854, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.g
+      value: 0.27824596
+      objectReference: {fileID: 0}
+    - target: {fileID: 865698762744071854, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
     - target: {fileID: 1756406056287122490, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -1029,6 +1068,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4754828701359713225, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754828701359713225, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.b
+      value: 0.19037023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754828701359713225, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.g
+      value: 0.267507
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754828701359713225, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
     - target: {fileID: 5009892940384570773, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1037,11 +1092,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6755287456320618877, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 668342169807058147, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2740105344738635813, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 384756250}
   m_SourcePrefab: {fileID: 100100000, guid: 63734c6706fefd8449e229437deed0ff, type: 3}
 --- !u!1 &756192406
 GameObject:
@@ -1673,6 +1735,7 @@ Transform:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTeleporter
   teleportOffset: 10
+<<<<<<< Updated upstream
 =======
   m_GameObject: {fileID: 8838717131339064616}
   m_Enabled: 1
@@ -1683,11 +1746,20 @@ Transform:
   regionName: Eastern Asia
   populationInMillions: 1842
 --- !u!114 &1850229904
+=======
+--- !u!4 &1743431211 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1743431217
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 8838717131339064618}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1725,6 +1797,36 @@ MonoBehaviour:
   regionName: Russian West
   populationInMillions: 114.8
 >>>>>>> CarlDesktop
+=======
+  m_GameObject: {fileID: 1743431207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e7ccdf5f0f28143b74855cac6898ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  teleportAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Teleport
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 90a1d580-133c-4e6b-8bc9-518e76d44f08
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: a3fd7924-2da6-4c2f-944b-ab1d0039887d
+        m_Path: <XRController>{LeftHand}/{PrimaryButton}
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Teleport
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  xrRigTransform: {fileID: 1743431211}
+  targetPosition: {x: 0, y: 0, z: -15}
+>>>>>>> Stashed changes
 --- !u!1001 &2068264564
 PrefabInstance:
   m_ObjectHideFlags: 0
