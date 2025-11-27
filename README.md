@@ -61,9 +61,9 @@ This project makes use of several incredible open resources:
 **Group Hackathon Athlone 2025**
 
 * **Carl** - [@Carlbytes](https://github.com/Carlbytes)
-* **Eabha**
+* **Eabha** - [@eabhakenny17](https://github.com/eabhakenny17)
 * **Evan**
-* **Jack**
+* **Jack** - [@Toobinn](https://github.com/Toobinn)
 * **Sam** - [@SamMcAulay](https://github.com/SamMcAulay)
 
 ---
