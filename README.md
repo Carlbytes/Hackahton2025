@@ -1,4 +1,4 @@
-# Hackathon Athlone 2025: Space VR Explorer 🪐
+# Hackathon Athlone 2025: Space VR Explorer 
 
 ![Project Status](https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Virtual_Reality-92278f?style=for-the-badge)
@@ -8,7 +8,7 @@
 
 Built for **Hackathon Athlone 2025**, this Virtual Reality experience allows users to explore the Earth, Moon, and Asteroids in immersive 3D. By integrating real-world data from **NASA APIs**, we bring the textures and scale of our solar system to life.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ![Unity](https://img.shields.io/badge/Unity-6%2B-000000?style=for-the-badge&logo=unity&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
@@ -20,14 +20,14 @@ Built for **Hackathon Athlone 2025**, this Virtual Reality experience allows use
 ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Rider](https://img.shields.io/badge/JetBrains_Rider-000000?style=for-the-badge&logo=jetbrains&logoColor=white)
 
-## 🌌 Features
+## Features
 
 * **Immersive VR Environment**: Walk around and interact with celestial bodies.
 * **Real-Time Data**: Powered by [NASA's Open APIs](https://api.nasa.gov/).
 * **High-Fidelity Rendering**: Custom shaders and high-resolution textures from NASA's Scientific Visualization Studio.
 * **Educational Overlay**: Visualize plate tectonics and other planetary data (e.g., `plate_tectonics_labels.png`).
 
-## 🧱 Assets & Attribution
+## Assets & Attribution
 
 This project makes use of several incredible open resources:
 
@@ -37,7 +37,7 @@ This project makes use of several incredible open resources:
 * **Vesta Model**: [NASA Science 3D Resources](https://science.nasa.gov/resource/vesta-3d-model/)
 * **Earth Textures**: Custom compilation.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -56,7 +56,7 @@ This project makes use of several incredible open resources:
 4.  Launch the project and open the main scene in `Assets/Scenes`.
 5.  Press **Play** to test in Editor (ensure your VR headset is connected).
 
-## 👥 The Team
+## The Team
 
 **Group Hackathon Athlone 2025**
 
